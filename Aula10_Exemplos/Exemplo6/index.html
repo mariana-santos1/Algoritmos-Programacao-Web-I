@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="formulario" class="panel panel-primary">
+    <div class="panel-heading">Meus  feitiços</div>
+    <div class="panel-body">
+      Feitiço: <input type="text"/>
+      Nível: <input type="text"/>
+      <span class="glyphicon glyphicon-plus" onclick="novoItem()">+</span>
+    </div>
+  </div>
+  
+  <div class="container col-md-3">
+    <div class="panel panel-defalt">
+      <div class="panel-body">
+        <table class="table table-striped" id="tabela">
+          <tr>
+            <th>feitiço</th>
+            <th>nivel</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
