@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .menor {
+            width: 25px;
+            height: 25px;
+        }
+
+        .pequena {
+            width: 50px;
+            height: 50px;
+        }
+
+        .media {
+            width: 100px;
+            height: 100px;
+        }
+
+        .grande {
+            width: 150px;
+            height: 150px;
+        }
+
+        .enorme {
+            width: 200px;
+            height: 200px;
+        }
+
+        .maior {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <title>Exercício 03</title>
+</head>
+<body>
+    <h1>Galeria de imagens</h1>
+    <button onclick="zoomIn()">+</button>
+    <button onclick="zoomOut()">-</button>
+
+    <br><br>
+
+    <div id="imagens"></div>
+
+    <script>
+    let tamanhos = ["menor", "pequena", "media", "grande", "enorme", "maior"];
+    let indice = 2;
+
+    let div = document.getElementById("imagens");
+
+    for (let i = 1; i <= 10; i++) {
+        let img = document.createElement("img");
+        img.src = `imagens/img${i}.jpg`;
+        img.className = "media";
+        div.appendChild(img);
+    }
+
+    function atualizarClasse() {
+        let imgs = document.getElementsByTagName("img");
+        for (let i = 0; i < imgs.length; i++) {
+            imgs[i].className = tamanhos[indice];
+        }
+    }
+
+    function zoomIn() {
+        if (indice < 5) {
+            indice++;
+            atualizarClasse();
+        }
+    }
+
+    function zoomOut() {
+        if (indice > 0) {
+            indice--;
+            atualizarClasse();
+        }
+    }
+    </script>
+</body>
+</html>

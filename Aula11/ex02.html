@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+<body>
+    <h1>Lista de Compras</h1>
+    <form id="formulario">
+        <div id="inputs"></div>
+        <button type="button" onclick="gerarLista()">Gerar Lista</button>
+    </form>
+
+    <ol id="lista"></ol>
+
+    <script>
+        let div = document.getElementById("inputs");
+        for (let i = 0; i < 10; i++) {
+            let input = document.createElement("input");
+            input.type = "text";
+            div.appendChild(input);
+            div.appendChild(document.createElement("br"));
+        }
+
+        function gerarLista() {
+            let inputs = document.getElementsByTagName("input");
+            let lista = document.getElementById("lista");
+
+            lista.innerHTML = ""; 
+
+            for (let i = 0; i < inputs.length; i++) {
+                if (inputs[i].value !== "") {
+                    let li = document.createElement("li");
+                    li.innerHTML = inputs[i].value;
+                    lista.appendChild(li);
+                }
+
+                inputs[i].value = "";
+            }
+        }
+    </script>
+</body>
+</html>

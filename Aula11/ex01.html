@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, td, th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+    </style>
+    <title>Exercício 01</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th onclick="colorirLivro()">Livro</th>
+            <th onclick="colorirPaginas()">Páginas</th>
+        </tr>
+        <tr>
+            <td>A Bússula de Ouro</td>
+            <td>365</td>
+        </tr>
+        <tr>
+            <td>A Faca Sutil</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>A Luneta Âmbar</td>
+            <td>526</td>
+        </tr>
+        <tr>
+            <td>A Pedra Filosofal</td>
+            <td>526</td>
+        </tr>
+        <tr>
+            <td>A Câmara Secreta</td>
+            <td>526</td>
+        </tr>
+    </table>
+    <script>
+        function limparCores() {
+            let tds = document.getElementsByTagName("td");
+            for (let i = 0; i < tds.length; i++) {
+                tds[i].style.backgroundColor = "";
+            }
+        }
+
+        function colorirLivro() {
+            limparCores();
+            let linhas = document.getElementsByTagName("tr");
+
+            for (let i = 1; i < linhas.length; i++) {
+                linhas[i].children[0].style.backgroundColor = "lightblue";
+            }
+        }
+
+        function colorirPaginas() {
+            limparCores();
+            let linhas = document.getElementsByTagName("tr");
+
+            for (let i = 1; i < linhas.length; i++) {
+                linhas[i].children[1].style.backgroundColor = "lightgreen";
+            }
+        }
+    </script>
+</body>
+</html>
