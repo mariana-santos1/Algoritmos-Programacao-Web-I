@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+    <script>
+        let entrada = prompt("Digite a nota do aluno:");
+        let nota = Number(entrada); 
+
+        if(nota < 0 || nota > 10){
+            alert("Nota inválida!");
+        } else {
+            if(nota >= 7){
+                alert("Aluno aprovado!");
+            } else if(nota < 5){
+                alert("Aluno reprovado!");
+            } else {
+                alert("Aluno em recuperação!");
+            }
+        }
+    </script>
+</body>
+</html>

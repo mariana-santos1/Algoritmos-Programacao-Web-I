@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+body{
+    margin: 20px;
+    background-color: whitesmoke;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-top: 15px;
+}
+
+h4{
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+p{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+li{
+    margin-left: 20px;
+}
