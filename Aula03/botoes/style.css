@@ -1,0 +1,65 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button{
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn1{
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn1:hover{
+    background-color: blue;
+}
+
+.btn2{
+    background-color: white;
+    color: crimson;
+    border: 2px solid crimson;
+    border-radius: 5px;
+}
+
+.btn2:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.btn3{
+    background-color: mediumseagreen;
+    color: white;
+    border-radius: 30px;
+}
+
+.btn3:hover{
+    background-color: seagreen;
+}
+
+.btn4{
+    background-color: orange;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.btn4:hover{
+    transform: translateY(-2px);
+}
+
+.btn5{
+    background: linear-gradient(45deg, purple, deeppink);
+    color: white;
+    border-radius: 8px;
+}
+
+.btn5:hover{
+    opacity: 0.8;
+}

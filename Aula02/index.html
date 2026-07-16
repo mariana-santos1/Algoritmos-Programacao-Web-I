@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="/processamento" method="post">
+        <fieldset>
+            <h1>Formulário do paciente</h1>
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <br>
+            <div>
+                <label for="dataNascimento">Nascimento (dd/mm/aaaa)</label><br>
+                <input type="date" id="dataNascimento" name="dataNascimento"> 
+            </div>
+            <br>
+            <div>
+                <label for="cpf">CPF:</label><br>
+                <input type="text" id="cpf" name="cpf">
+            </div>
+            <br>
+            <div>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+            <br>
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+            <br>
+            <img src="hospital.jpg">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro de Produto</title>
+</head>
+<body>
+    <form action="cadastrarProduto" method="post">
+        <div>
+            <label for="nome">Nome do produto: </label><br>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <br>
+        <div>
+            <label for="descricao">Descrição: </label><br>
+            <textarea id="descricao" name="descricao" rows="10" cols="50" placeholder="Descrição do produto"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="categoria">Categoria: </label>
+            <select name="categoria" id="categoria">
+                <option value="eletronico">Eletrônico</option>
+                <option value="vestuario">Vestuário</option>
+                <option value="alimento">Alimento</option>
+                <option value="servico">Serviço</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="preco">Preço: </label>
+            <input type="number" step="0.01" id="preco" name="preco" required> 
+        </div>
+        <br>
+        <div>
+            <label for="estoque">Quantidade em estoque: </label>
+            <input type="number" id="estoque" name="estoque">
+        </div>
+        <br>
+        <div>
+            <label for="codigo">Código do produto: </label>
+            <input type="text" id="codigo" name="codigo" required>
+        </div>
+        <br>
+        <div>
+            <label for="dataCadastro">Date de cadastro: </label>
+            <input type="date" id="dataCadastro" name="dataCadastro">
+        </div>
+        <br>
+        <div>
+            <input type="radio" id="ativo" name="status" value="ativo" checked>
+            <label for="ativo">Ativo</label><br>
+            <input type="radio" id="inativo" name="status" value="inativo">
+            <label for="inativo">Inativo</label>
+        </div>
+        <br>
+        <div>
+            <label for="confirmar">Confirmo que as informações estão corretas: </label><br>
+            <input type="checkbox" id="confirmar" name="confirmar">
+        </div>
+        <br>
+        <div class="button">
+            <button type="submit">Cadastrar Produto</button>
+        </div>
+    </form>
+</body>
+</html>

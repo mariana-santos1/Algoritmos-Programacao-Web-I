@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(0,170,170), rgb(3, 76, 76));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.formContainer{
+    background-color: white;
+    padding: 35px;
+    width: 600px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.25);
+}
+
+.formContainer div{
+    margin-bottom: 15px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.formContainer input[type="text"],
+.formContainer input[type="number"],
+.formContainer input[type="tel"],
+.formContainer input[type="date"],
+.formContainer input[type="email"],
+.formContainer select,
+.formContainer textarea{
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.formContainer input:focus,
+.formContainer select:focus,
+.formContainer textarea:focus{
+    outline: none;
+    border-color: rgb(0,150,150);
+    box-shadow: 0 0 5px rgba(0,150,150,0.5);
+}
+
+.formContainer textarea{
+    resize: vertical;
+}
+
+.formContainer input[type="radio"],
+.formContainer input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+.turno, .sex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.turno p, .sex p{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.formContainer button{
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(0,140,140);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.formContainer button:hover{
+    background-color: rgb(0,110,110);
+    transform: translateY(-2px);
+}
